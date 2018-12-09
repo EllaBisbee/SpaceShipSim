@@ -1,0 +1,17 @@
+body {
+	margin: 0px; 
+	background-color: #ededed
+}
+
+#inputVideo {
+    position: absolute;
+    top: 50px;
+    z-index: 1001;
+    display: block;
+}
+#outerContainer {
+    margin: 0 !important;
+}
+#bottomContainer {
+	padding-bottom: 15px;
+}

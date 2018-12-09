@@ -1,0 +1,13 @@
+Ella Bisbee & Ramon Fernandes (ebisbe01 & rferna04) Homework 11 
+12/7/18
+
+Our program is a 3D implementation of the vehicle assignment from
+earlier in the semester. It includes a head tracker to be able to
+control the perspective of the screen using your head. We allow users
+to go to the perspective of an individual spaceship as well as overall
+bird's-eye perspective. Users can add spaceships, stop all spaceships,
+change the speed of individual spaceships, and remove an individual
+spaceship. Individal spaceships are selected through mouse picking.
+
+To run this program, open the "shipSim.html" file in any browser that
+supports WebGL. We used Google Chrome to test this.

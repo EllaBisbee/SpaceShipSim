@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<title>Ella Bisbee Homework 11</title>
+
+<script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+<script src="boiler.js"></script>
+<script src="lights.js"></script>
+<script src="headtrackr.js"></script>
+<script src="shipSim.js"></script>
+<script src="diamond.js"></script>
+<script src="spaceship.js"></script>
+<script src="scene.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Container for three.js -->
+<div>
+    <canvas id="inputCanvas" width="320" height="240" style="display:none"></canvas>
+    <video id="inputVideo" autoplay loop hidden></video>
+</div>
+<div id="outerContainer" class="container" style="margin:0; padding:0; max-width:100%;">
+    <div class="row" style="width:100%; margin:0;">
+        <div id="theContainer" style="width:75%; display:inline-block;"></div>
+        <div id="sidepanel" style="width:25%; padding:10px; display:inline-block;" class="text-center">
+            <div id="individual-buttons">
+                <h3>Individual Controllers</h3>
+                <button class="btn btn-primary" style="background-color: #0AB06E; margin-bottom:12px;" 
+                onclick="removeSpaceship()" disabled >Remove Spaceship</button>
+                <br/>
+                <button class="btn btn-primary" style="background-color: #08BD4B; margin-bottom:12px;" onclick="changeSpeed()" disabled>Change Speed Vector</button>
+                <br/>
+                <button class="btn btn-primary" style="background-color: #0FCE8E; margin-bottom:12px;" onclick="goToPersp()" disabled>Go to Perspective</button>
+                <br/>
+            </div>
+            <hr>
+            <h3>Score Board</h3>
+            <p>Score: <span id="score">0</span></p>
+            <p>Number of Diamonds Popped: <span id="num_bub">0</span></p>
+            <p>Number of Collisions: <span id="num_col">0</span></p>
+        </div>
+    </div>
+</div>
+<div id="bottomContainer" class="container">
+    <h3>General Controllers</h3>
+    <button class="btn btn-primary" style="background-color: #2607b2;" onclick="addSpaceship()">Add Spaceship</button>
+    <button id="stop-all" class="btn btn-primary" style="background-color: #865ed6;" onclick="stopAllSpaceships()">Stop All Spaceships</button>
+    <button class="btn btn-primary" style="background-color: #C59BFC;" onclick="resetPerspective()">Reset Perspective</button>
+</div>
+</body>
+</html>
